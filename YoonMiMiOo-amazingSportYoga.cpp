@@ -502,7 +502,9 @@ int main(){
         }
         goto cusLabel;
     }
-    else if(menuCode==0) return 0;
+    else if(menuCode==0) {
+        cout<<"Good Bye From My System! Thanks You For Using This";
+        return 0;}
     else goto menuLabel;
 }
 
