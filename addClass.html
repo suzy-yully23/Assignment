@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online class </title>
+    <script src="./tailwind.js"></script>
+</head>
+<body>
+    <div class="text-center text-3xl m-1 mb-5">
+        Add an online class
+    </div>
+    <div class="w-fit grid grid-cols-1 mx-auto gap-3 my-3">
+        <label class="px-5 my-1 block" for="name_">Name of the online class</label><input class="px-2 py-.5 block my-1 outline-none border focus:border-black rounded-md" type="text" name="name" id="name_">
+        <label class="px-5 my-1 block" for="teacher_">Name of the teacher</label><input class="px-2 py-.5 block my-1 outline-none border focus:border-black rounded-md" type="text" name="teacher" id="teacher_">
+        <label class="px-5 my-1 block" for="totMonth_">Total months</label><input class="px-2 py-.5 block my-1 outline-none border focus:border-black rounded-md" type="number" max="10" name="totMonth" id="totMonth_">
+        <label class="px-5 my-1 block" for="totDays_">Opened days in a week</label><input class="px-2 py-.5 block my-1 outline-none border focus:border-black rounded-md" type="number" max="1000" name="totDays_" id="totDays_">
+        <label class="px-5 my-1 block" for="contactInfo_">Contact Info</label><input class="px-2 py-.5 block my-1 outline-none border focus:border-black rounded-md" type="text" name="contactInfo" id="contactInfo_">
+    </div>
+    <div class="w-fit grid grid-cols-2 mx-auto gap-3 my-3">
+        <button id="submit" class="block w-fit mx-auto py-2 px-3 bg-green-700 text-white rounded-md my-5 hover:bg-green-900 active:scale-95 duration-300">
+            Submit
+        </button>
+        <button class="block w-fit mx-auto py-2 px-3 text-black rounded-md my-5 border border-red-300 hover:bg-red-500 active:scale-95 hover:text-white duration-300">
+            Cancel
+        </button>
+    </div>
+    <div id="txt" class="text-green-400 w-fit mx-auto"></div>
+</body>
+        
+</html>
